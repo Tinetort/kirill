@@ -551,6 +551,7 @@ html {
   margin-bottom: 16px;
   font-family: "Forum";
   margin-left: 10px;
+  align-items: center;
 }
 @media all and (max-width: 545px) {
   .info-menu__about-item_footer {
@@ -610,6 +611,7 @@ hr {
   margin-right: 35px;
   font-size: 16px;
   color: black;
+  margin: 2px;
 }
 @media all and (max-width: 551px) {
   .navbar-menu__link {
@@ -622,6 +624,10 @@ hr {
 }
 .navbar-menu__list a {
   text-decoration: none;
+}
+
+.direc {
+  height: 75px !important;
 }
 
 .button {
@@ -891,6 +897,7 @@ hr {
 .sixth-section__card-item {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .sixth-section__description {
   margin-right: auto;
@@ -898,6 +905,7 @@ hr {
   line-height: 32px;
   color: rgb(98, 191, 255);
   font-family: "Impacted";
+  margin: 0 auto;
 }
 
 .seven-section {
@@ -991,11 +999,7 @@ hr {
   font-family: "Fraunces-Regular";
   font-weight: 400;
   color: rgb(4, 36, 61);
-}
-@media all and (max-width: 620px) {
-  .footer-section__card-item_tel {
-    font-size: 14px;
-  }
+  font-size: 12px;
 }
 .footer-section__card-item-about {
   font-family: "Fraunces-Regular";
@@ -1061,6 +1065,7 @@ hr {
 }
 .breadcrumbs a {
   text-decoration: none;
+  color: #62BFFF;
 }
 
 .services-first-section {
@@ -1158,7 +1163,7 @@ hr {
 }
 .doctors-third-section__border {
   max-width: 285px;
-  height: 64px;
+  height: auto;
   border: 1px solid #62BFFF;
   padding: 5px;
   display: flex;
@@ -1397,6 +1402,7 @@ hr {
 }
 .article-forth-section__flex {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   font-size: 16px !important;
@@ -1709,7 +1715,8 @@ hr {
 }
 .article-thirteen-section__item {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .article-thirteen-section__description {
   margin-bottom: 40px;
@@ -1977,6 +1984,9 @@ hr {
 }
 
 @media all and (max-width: 481px) {
+  .article-twelve-section__text {
+    font-size: 25px;
+  }
   hr {
     display: none;
   }
@@ -1985,7 +1995,7 @@ hr {
   }
   .navbar-menu {
     position: relative;
-    height: 110px;
+    height: 165px;
     display: flex;
     align-content: stretch;
     justify-content: space-around;
@@ -2057,6 +2067,12 @@ hr {
   }
 }
 @media all and (max-width: 451px) {
+  .third-section__card-container {
+    flex-direction: column;
+  }
+  .third-section__card-item {
+    margin: 5px;
+  }
   .footer-section__card-item {
     margin: 0 8px 5px 0;
     font-size: 8px;
@@ -2100,6 +2116,24 @@ hr {
   }
   .doctors-third-section__container {
     justify-content: center;
+  }
+}
+@media all and (max-width: 426px) {
+  .sixth-section__card-container {
+    width: 100%;
+  }
+  .card-box__subtext_sixth {
+    width: 100%;
+  }
+  .card-box__subtext_fifth {
+    width: 100%;
+  }
+  .second-section__btn {
+    width: 100%;
+    flex-direction: column;
+  }
+  .button {
+    margin: 3px;
   }
 }
 @media all and (max-width: 416px) {

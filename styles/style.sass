@@ -156,6 +156,7 @@ html
             margin-bottom: 16px
             font-family: 'Forum'
             margin-left: 10px
+            align-items: center
             @media all and (max-width: 545px)
                 font-size: 10px
 
@@ -201,6 +202,7 @@ hr
         margin-right: 35px
         font-size: 16px
         color: black
+        margin: 2px
     &__link
         @media all and (max-width: 551px)
             font-size: 12px
@@ -209,6 +211,8 @@ hr
         justify-content: space-between
         a
             text-decoration: none
+.direc
+    height: 75px !important
 .button
     width: 180px
     height: 50px
@@ -400,13 +404,14 @@ hr
     &__card-item
         display: flex
         flex-direction: column
+        align-items: center
     &__description
         margin-right: auto
         font-size: 26px
         line-height: 32px
         color: rgba(98, 191, 255, 1)
         font-family: 'Impacted'
-
+        margin: 0 auto
 .seven-section
     margin-bottom: 133px
     &__description
@@ -475,8 +480,7 @@ hr
             font-family: 'Fraunces-Regular'
             font-weight: 400
             color: rgba(4, 36, 61, 1)
-            @media all and (max-width: 620px)
-                font-size: 14px
+            font-size: 12px
     &__card-item-about
         font-family: 'Fraunces-Regular'
         color: rgba(4, 36, 61, 1)
@@ -522,6 +526,7 @@ hr
     display: flex
     a
         text-decoration: none
+        color: #62BFFF
 // Услуги
 .services-first-section
     margin-bottom: 50px
@@ -598,7 +603,7 @@ hr
         justify-content: flex-end
     &__border
         max-width: 285px
-        height: 64px
+        height: auto
         border: 1px solid #62BFFF
         padding: 5px
         display: flex
@@ -781,6 +786,7 @@ hr
             margin-bottom: 10px
     &__flex
         display: flex
+        flex-direction: column
         align-items: center
         justify-content: space-between
         font-size: 16px!important
@@ -1025,7 +1031,8 @@ hr
         justify-content: space-between
     &__item
         display: flex
-        flex-direction: column
+        flex-wrap: wrap
+        justify-content: center
     &__description
         margin-bottom: 40px
     &__btn
@@ -1248,13 +1255,16 @@ hr
     &__card-box
         width: 390px
 @media all and (max-width: 481px)
+    .article-twelve-section
+        &__text
+            font-size: 25px
     hr
         display: none
     .breadcrumbs
         margin-top: 10px
     .navbar-menu
         position: relative
-        height: 110px
+        height: 165px
         display: flex
         align-content: stretch
         justify-content: space-around
@@ -1319,6 +1329,11 @@ hr
     .container
         width: 90%
 @media all and (max-width: 451px)
+    .third-section
+        &__card-container
+            flex-direction: column
+        &__card-item
+            margin: 5px
     .footer-section
         &__card-item
             margin: 0 8px 5px 0
@@ -1357,8 +1372,23 @@ hr
     .doctors-third-section
         &__container
             justify-content: center
-
+@media all and (max-width: 426px)
+    .sixth-section
+        &__card-container
+            width: 100%
+    .card-box
+        &__subtext_sixth
+            width: 100%
+        &__subtext_fifth
+            width: 100%
+    .second-section
+        &__btn
+            width: 100%
+            flex-direction: column
+    .button
+        margin: 3px
 @media all and (max-width: 416px)
+    
     .seven-section
         display: none
     .card-box
