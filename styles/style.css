@@ -2059,6 +2059,7 @@ hr {
 @media all and (max-width: 451px) {
   .footer-section__card-item {
     margin: 0 8px 5px 0;
+    font-size: 8px;
   }
   .footer-section__card-item_tel {
     font-size: 8px;
