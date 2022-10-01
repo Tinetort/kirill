@@ -2019,7 +2019,7 @@ hr {
   }
   .info-menu__info {
     flex-direction: row;
-    width: 370px;
+    width: 345px;
     justify-content: space-around;
   }
   .second-section__btn {
@@ -2118,7 +2118,7 @@ hr {
     display: none;
   }
   .second-section__btn {
-    width: 410px;
+    width: 100%;
   }
   .footer-section__absolute-container {
     width: 246px;
@@ -2128,6 +2128,9 @@ hr {
   }
   .article-thirteen-section__about {
     font-size: 10px;
+  }
+  .reviews-first-section__about-person img {
+    width: 200px;
   }
 }
 @media all and (max-width: 376px) {
