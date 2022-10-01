@@ -462,6 +462,7 @@ html {
 }
 .pop-up form input, .pop-up form textarea {
   border: 1px solid rgb(98, 191, 255);
+  width: 80%;
 }
 
 .pop-up.active {
