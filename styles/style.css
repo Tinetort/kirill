@@ -2070,11 +2070,11 @@ hr {
   .footer-section__absolute-container {
     width: 280px;
   }
-  .services-second-section {
-    font-size: 16px;
-  }
   .services-second-section__item {
     width: 380px;
+  }
+  .services-second-section__about {
+    font-size: 16px;
   }
   .article-eleven-section__container {
     justify-content: center;
@@ -2121,7 +2121,7 @@ hr {
     width: 100%;
   }
   .footer-section__absolute-container {
-    width: 246px;
+    width: 280px;
   }
   .services-second-section__item {
     width: 360px;
