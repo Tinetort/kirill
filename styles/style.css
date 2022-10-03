@@ -397,6 +397,7 @@ table {
 html {
   font-family: "Fraunces-Thin";
   color: rgb(130, 130, 130);
+  overflow-x: hidden;
 }
 
 .pop-up {
@@ -527,6 +528,10 @@ html {
 .info-menu {
   display: flex;
   justify-content: space-between;
+}
+.info-menu__tel {
+  text-decoration: none;
+  color: #a08e96;
 }
 .info-menu__info {
   display: flex;
