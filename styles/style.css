@@ -528,6 +528,7 @@ html {
 .info-menu {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 10px;
 }
 .info-menu__tel {
   text-decoration: none;
@@ -1226,7 +1227,7 @@ hr {
 .reviews-third-section__container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly !important;
 }
 .reviews-third-section__sub-container {
   display: flex;
@@ -2004,7 +2005,7 @@ hr {
   .hamburger {
     width: 30px;
     position: absolute;
-    top: 175px;
+    top: 25px;
     left: 38px;
     height: 14px;
   }
@@ -2152,7 +2153,6 @@ hr {
     justify-content: space-around;
   }
   .second-section__btn {
-    width: 440px;
     margin: 0 auto;
   }
   .third-section__card-txt {
@@ -2160,15 +2160,6 @@ hr {
   }
   .third-section__card-container {
     max-width: 450px;
-  }
-  .card-box__subtext_fifth {
-    width: 450px;
-  }
-  .card-box__subtext_sixth {
-    width: 450px;
-  }
-  .sixth-section__card-container {
-    width: 450px;
   }
   .seven-section__card-container {
     width: 450px;
@@ -2287,13 +2278,33 @@ hr {
     font-size: 10px;
   }
   .reviews-first-section__about-person img {
-    width: 200px;
+    width: 150px;
+  }
+  .reviews-third-section__card-box {
+    width: 350px;
+  }
+  .reviews-third-section__card-box-text {
+    max-width: 220px;
+  }
+  .reviews-third-section__card-box-description {
+    font-size: 22px;
   }
 }
-@media all and (max-width: 376px) {
-  body {
-    width: 376px;
+@media all and (max-width: 395px) {
+  .reviews-third-section__card-box {
+    width: 350px;
   }
+  .reviews-third-section__card-box-text {
+    max-width: 220px;
+  }
+  .reviews-third-section__card-box-description {
+    font-size: 22px;
+  }
+  .footer-section__absolute-container {
+    width: 245px;
+  }
+}
+@media all and (max-width: 377px) {
   .article-fourteen-section__who {
     font-size: 24px;
   }
@@ -2302,14 +2313,6 @@ hr {
   }
   .card-box__subtext {
     width: 340px;
-  }
-  .btn-list__btn-white_square {
-    margin: 3px 0;
-  }
-  .second-section__btn {
-    flex-direction: column;
-    align-items: center;
-    width: 330px;
   }
   .info-menu__info {
     width: 340px;
@@ -2337,6 +2340,15 @@ hr {
   }
   .footer-section__card-item_tel {
     font-size: 6px;
+  }
+  .reviews-third-section__card-box {
+    width: 340px;
+  }
+  .reviews-third-section__card-box-text {
+    max-width: 226px;
+  }
+  .reviews-third-section__card-box-description {
+    font-size: 22px;
   }
 }
 @media (max-width: 281px) {

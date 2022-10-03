@@ -138,6 +138,7 @@ html
 .info-menu
     display: flex
     justify-content: space-between
+    margin-bottom: 10px
     &__tel
         text-decoration: none
         color: #a08e96
@@ -635,6 +636,7 @@ hr
         display: flex
         flex-direction: column
         align-items: center
+        // padding: 0 0 0 10px
     &__person
         color: rgba(4, 36, 61, 1)
         margin: 10px 0
@@ -647,7 +649,7 @@ hr
     &__container
         display: flex
         flex-wrap: wrap
-        justify-content: space-between
+        justify-content: space-evenly !important
     &__sub-container
         display: flex
         flex-direction: column
@@ -1270,7 +1272,7 @@ hr
     .hamburger
         width: 30px
         position: absolute
-        top: 175px
+        top: 25px
         left: 38px
         height: 14px
         span
@@ -1392,24 +1394,12 @@ hr
         justify-content: space-around
     .second-section
         &__btn
-            width: 440px
             margin: 0 auto
     .third-section
         &__card-txt
             font-size: 12px
         &__card-container
             max-width: 450px
-    .card-box
-        &__subtext
-            &_fifth
-                width: 450px
-    .card-box
-        &__subtext
-            &_sixth
-                width: 450px
-    .sixth-section
-        &__card-container
-            width: 450px
     .seven-section
         &__card-container
             width: 450px
@@ -1512,10 +1502,26 @@ hr
     .reviews-first-section
         &__about-person
             img
-                width: 200px
-@media all and (max-width: 376px)
-    body
-        width: 376px
+                width: 150px
+    .reviews-third-section
+        &__card-box
+            width: 350px
+        &__card-box-text
+            max-width: 220px
+        &__card-box-description
+            font-size: 22px
+@media all and (max-width: 395px)
+    .reviews-third-section
+        &__card-box
+            width: 350px
+        &__card-box-text
+            max-width: 220px
+        &__card-box-description
+            font-size: 22px
+    .footer-section
+        &__absolute-container
+            width: 245px
+@media all and (max-width: 377px)
     .article-fourteen-section
         &__who
             font-size: 24px
@@ -1524,15 +1530,6 @@ hr
             align-items: center
         &__subtext
             width: 340px
-    .btn-list
-        &__btn-white
-            &_square
-                margin: 3px 0
-    .second-section
-        &__btn
-            flex-direction: column
-            align-items: center
-            width: 330px
     .info-menu
         &__info
             width: 340px
@@ -1557,6 +1554,13 @@ hr
         &__card-item
             &_tel
                 font-size: 6px
+    .reviews-third-section
+        &__card-box
+            width: 340px
+        &__card-box-text
+            max-width: 226px
+        &__card-box-description
+            font-size: 22px
 @media (max-width: 281px)
     .container
         width: 250px
