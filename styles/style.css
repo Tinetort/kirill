@@ -1866,6 +1866,57 @@ hr {
   }
 }
 @media all and (max-width: 1045px) {
+  .navbar-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    background-color: rgba(1, 1, 1, 0.7058823529);
+    z-index: 20;
+  }
+  .hamburger {
+    width: 30px;
+    position: absolute;
+    top: 175px;
+    left: 38px;
+    height: 14px;
+  }
+  .hamburger span {
+    height: 2px;
+    width: 100%;
+    display: block;
+    background-color: black;
+    margin-bottom: 4px;
+    transition: 1s all;
+  }
+  .hamburger span:last-child {
+    margin-bottom: 0;
+  }
+  .hamburger_active span {
+    margin-bottom: -2px;
+  }
+  .hamburger_active span:nth-child(1) {
+    transform: translateY(3px) rotate(-45deg);
+  }
+  .hamburger_active span:nth-child(2) {
+    display: none;
+  }
+  .hamburger_active span:nth-child(3) {
+    transform: translateY(3px) rotate(45deg);
+  }
+  .navbar-menu_active {
+    display: block;
+    height: 100vh;
+    width: 50% !important;
+  }
+  .navbar-menu__list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar-menu__item {
+    margin: 20px;
+  }
   .container {
     width: 569px;
   }
@@ -1877,6 +1928,8 @@ hr {
   }
   .navbar-menu__link {
     font-size: 12px;
+    color: white;
+    margin: 5px;
   }
   .fourth-section__about {
     width: 435px;
@@ -1919,7 +1972,72 @@ hr {
     margin: 0 10px;
   }
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 898px) {
+  .doctors-second-section__container {
+    justify-content: center;
+  }
+  .doctors-second-section__item_first {
+    margin: 0 auto;
+  }
+}
+@media all and (max-width: 769px) {
+  .second-section__btn {
+    flex-direction: column;
+  }
+  .button {
+    margin: 3px;
+  }
+  .navbar-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    background-color: rgba(1, 1, 1, 0.7058823529);
+    z-index: 20;
+  }
+  .hamburger {
+    width: 30px;
+    position: absolute;
+    top: 175px;
+    left: 38px;
+    height: 14px;
+  }
+  .hamburger span {
+    height: 2px;
+    width: 100%;
+    display: block;
+    background-color: black;
+    margin-bottom: 4px;
+    transition: 1s all;
+  }
+  .hamburger span:last-child {
+    margin-bottom: 0;
+  }
+  .hamburger_active span {
+    margin-bottom: -2px;
+  }
+  .hamburger_active span:nth-child(1) {
+    transform: translateY(3px) rotate(-45deg);
+  }
+  .hamburger_active span:nth-child(2) {
+    display: none;
+  }
+  .hamburger_active span:nth-child(3) {
+    transform: translateY(3px) rotate(45deg);
+  }
+  .navbar-menu_active {
+    display: block;
+    height: 100vh;
+    width: 50% !important;
+  }
+  .navbar-menu__list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar-menu__item {
+    margin: 20px;
+  }
   .seven-section {
     display: none;
   }
@@ -1969,7 +2087,10 @@ hr {
   justify-content: space-between;
 }
 .doctors-second-section__item_first {
-  margin: 0;
+  margin: 0 auto;
+}
+.doctors-second-section__item {
+  margin: 0 auto;
 }
 
 .reviews-third-section__container {
@@ -1992,13 +2113,6 @@ hr {
   }
   .breadcrumbs {
     margin-top: 10px;
-  }
-  .navbar-menu {
-    position: relative;
-    height: 165px;
-    display: flex;
-    align-content: stretch;
-    justify-content: space-around;
   }
   .navbar-menu__list {
     display: flex;
@@ -2137,6 +2251,9 @@ hr {
   }
 }
 @media all and (max-width: 416px) {
+  .hamburger {
+    top: 40px;
+  }
   .seven-section {
     display: none;
   }
@@ -2206,5 +2323,34 @@ hr {
   }
   .article-fourteen-section__text {
     width: 220px;
+  }
+  .hamburger {
+    top: 40px;
+  }
+  .footer-section__absolute-container {
+    width: 235px;
+  }
+  .footer-section__card-item_tel {
+    font-size: 6px;
+  }
+}
+@media (max-width: 281px) {
+  .container {
+    width: 250px;
+  }
+  .first-section__enter-img {
+    width: 220px;
+  }
+  .third-section__img {
+    width: 220px;
+  }
+  .card-box__subtext_sixth {
+    max-width: 250px;
+  }
+  .card-box__subtext_fifth {
+    max-width: 250px;
+  }
+  .card-box__subtext {
+    width: 250px;
   }
 }/*# sourceMappingURL=style.css.map */
